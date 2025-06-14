@@ -1,0 +1,23 @@
+<resources>
+
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+
+    </style>
+
+    <!-- Application theme. -->
+    <!-- <style name="AppTheme" parent="AppBaseTheme">
+         &lt;!&ndash; All customizations that are NOT specific to a particular API-level can go here. &ndash;&gt;
+
+     </style>-->
+    <!-- 使用 AppCompat 主题 -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- 可自定义颜色等主题内容 -->
+        <item name="colorPrimary">#003087</item>
+        <item name="colorPrimaryDark">#003087</item>
+        <item name="colorAccent">#000000</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowActionBar">false</item>
+    </style>
+
+</resources>

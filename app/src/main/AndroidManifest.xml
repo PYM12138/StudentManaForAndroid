@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.bysj.yrj">
+
+    <!-- 读取手机状态和身份 -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <!-- 拥有完全的网络访问权限 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!-- 修改或删除您的USB存储设备中的内容 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <!-- 查看网络连接 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/seig"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".LoginActivity"
+            android:exported="true"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".RegisterActivity"
+            android:exported="true"
+            android:label="@string/title_activity_register" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:label="@string/title_activity_Main" />
+        <activity
+            android:name=".AddStudentInfoActivity"
+            android:exported="true"
+            android:label="@string/title_activity_add_info" />
+        <activity
+            android:name=".PassRepairActivity"
+            android:exported="true"
+            android:label="@string/title_activity_pass_repair" />
+        <activity
+            android:name=".ShowStudentInfoActivity"
+            android:exported="true"
+            android:label="@string/title_activity_show_student_info" />
+        <activity
+            android:name=".WeihuStudentInfoActivity"
+            android:exported="true"
+            android:label="@string/title_activity_weihu_student_info" />
+        <activity
+            android:name=".RepairStudentInfoActivity"
+            android:exported="true"
+            android:label="@string/title_activity_repair_student_info" />
+        <activity
+            android:name=".AddStudentScoreActivity"
+            android:exported="true"
+            android:label="@string/title_activity_add_student_score" />
+        <activity
+            android:name=".ShowStudentScoreActivity"
+            android:exported="true"
+            android:label="@string/title_activity_show_student_score" />
+        <activity
+            android:name=".WeihuStudentScoreActivity"
+            android:exported="true"
+            android:label="@string/title_activity_weihu_student_score" />
+        <activity
+            android:name=".RepairStudentScoreActivity"
+            android:exported="true"
+            android:label="@string/title_activity_repair_student_score" />
+        <activity
+            android:name=".HelpActivity"
+            android:exported="true"
+            android:label="软件信息" />
+        <activity
+            android:name=".ExitActivity"
+            android:exported="true"
+            android:label="退出" />
+
+    </application>
+
+</manifest>
